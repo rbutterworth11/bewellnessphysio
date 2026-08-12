@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bewellnessphysio.co.uk/sitemap.xml
