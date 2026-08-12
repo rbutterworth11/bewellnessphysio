@@ -68,6 +68,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: var(--body);
   font-weight: 300;
   font-size: 1rem;
@@ -221,9 +222,10 @@ li { margin-bottom: .4rem; }
   background: rgba(22, 22, 22, 0.42);
   z-index: -1;
 }
+.hero > div { max-width: 100%; }
 .hero h1 { margin-bottom: 1.2rem; }
 .hero p {
-  max-width: 34rem;
+  max-width: min(34rem, 100%);
   margin: 0 auto 2rem;
   font-size: 1.05rem;
 }
@@ -363,7 +365,7 @@ input:focus, textarea:focus {
 .inline-form {
   display: flex;
   gap: .8rem;
-  max-width: 480px;
+  max-width: min(480px, 100%);
   margin-inline: auto;
 }
 .inline-form input { margin-bottom: 0; flex: 1; }
