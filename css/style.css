@@ -443,6 +443,7 @@ input:focus, textarea:focus {
 }
 .logo-strip img { height: 74px; width: auto; }
 .logo-strip img[src*="hcpc"] { height: 50px; }
+.logo-strip img[src*="hip-pilates"] { height: 52px; }
 
 /* ---------- contact ---------- */
 .contact-grid {
@@ -632,13 +633,16 @@ input:focus, textarea:focus {
   .contact-info h4 { font-size: 1.4rem; }
 
   .logo-strip {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem 1rem;
     padding: 2rem 1.5rem;
   }
-  .logo-strip img { height: 44px; width: auto; max-width: none; }
-  .logo-strip img[src*="hcpc"] { height: 34px; }
+  .logo-strip img { height: 46px; width: auto; max-width: 100%; }
+  .logo-strip img[src*="hcpc"] { height: 40px; }
+  .logo-strip img[src*="hip-pilates"] { height: 42px; }
 
   .site-footer { padding: 1.5rem 0 1.75rem; }
   .site-footer nav ul { gap: 0 1.25rem; margin-bottom: .75rem; }
